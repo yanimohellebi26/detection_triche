@@ -4,3 +4,10 @@ dataset/
 backend/venv/
 backend/venv/*
 *.pth
+frontend/node_modules/
+frontend/node_modules/*
+frontend/dist/
+frontend/dist/*
+frontend/.env
+frontend/.vscode/
+frontend/.vscode/* 
