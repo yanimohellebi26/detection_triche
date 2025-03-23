@@ -1,8 +1,7 @@
 from fastapi import APIRouter, UploadFile, File
 import cv2
 import numpy as np
-from video_analysis import detect_face
-
+from services.video_analysis import detect_face
 
 router = APIRouter()
 
