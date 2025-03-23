@@ -1,0 +1,6 @@
+﻿data/
+models/
+dataset/
+backend/venv/
+backend/venv/*
+*.pth

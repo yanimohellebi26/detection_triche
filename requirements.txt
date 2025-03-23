@@ -1,7 +1,0 @@
-﻿fastapi
-uvicorn
-opencv-python
-mediapipe
-torch
-torchaudio
-torchvision
