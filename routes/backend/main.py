@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from backend.routes import video
+from routes import video
 
 app = FastAPI(title="Système de Détection de Triche",
               description="Analyse les vidéos pour détecter des comportements suspects pendant un examen.",

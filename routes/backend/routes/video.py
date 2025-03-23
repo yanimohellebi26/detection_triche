@@ -1,7 +1,7 @@
 from fastapi import APIRouter, UploadFile, File
 import cv2
 import numpy as np
-from services.video_analysis import detect_face
+from services.video_analysis import analyze_video
 
 router = APIRouter()
 
@@ -15,7 +15,7 @@ async def analyze_video(file: UploadFile = File(...)):
     if frame is None:
         return {"error": "Invalid video format"}
 
-    processed_frame = detect_face(frame)
+    processed_frame = analyze_video(frame)
     _, encoded_image = cv2.imencode(".jpg", processed_frame)
     
     return {"message": "Face detected", "image": encoded_image.tobytes()}
